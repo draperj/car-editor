@@ -1,0 +1,11 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Back to cars"), cars_path %>
+
+  <div class="header">
+    <h1>New car</h1>
+  </div>
+
+  <%= turbo_frame_tag @car do %>
+    <%= render "form", car: @car %>
+  <% end %>
+</main>

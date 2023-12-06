@@ -1,0 +1,22 @@
+<%= turbo_stream_from current_team, "cars" %>
+
+<div class="container">
+  <div class="header">
+    <h1>Cars</h1>
+    <%= link_to "New car",
+                new_car_path,
+                class: "btn btn--primary",
+                data: { turbo_frame: dom_id(Car.new) } %>
+
+
+     <%= link_to "Generate test cars", generate_data_path, 
+     class: "btn btn--primary",remote: true  %>
+  </div>
+
+  <%= turbo_frame_tag Car.new %>
+
+  <%= turbo_frame_tag "cars" do %>
+    <%= render "cars/empty_state" %>
+    <%= render @cars %>
+  <% end %>
+</div>

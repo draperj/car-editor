@@ -1,0 +1,14 @@
+foo:
+  team: oms
+  email: foo@flexcar.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+bar:
+  team: viability
+  email: bar@flexcar.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>
+
+jd:
+  team: ecomm
+  email: joshua.draper@flexcar.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password') %>

@@ -1,0 +1,11 @@
+<%= simple_form_for car, html: { class: "car form" } do |f| %>
+    <% if car.errors.any? %>
+      <div class="error-message">
+        <%= car.errors.full_messages.to_sentence.capitalize %>
+      </div>
+    <% end %>
+  
+    <%= f.input :name, input_html: { autofocus: true } %>
+    <%= link_to "Cancel", cars_path, class: "btn btn--light" %>
+    <%= f.submit class: "btn btn--secondary" %>
+  <% end %>

@@ -1,0 +1,10 @@
+<div class="empty-state empty-state--only-child">
+  <p class="empty-state__text">
+    You don't have any cars yet!
+  </p>
+
+  <%= link_to "Add car",
+              new_car_path,
+              class: "btn btn--primary",
+              data: { turbo_frame: dom_id(Car.new) } %>
+</div>

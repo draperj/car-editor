@@ -1,0 +1,14 @@
+en:
+  simple_form:
+    placeholders:
+      car:
+        name: Name of your car
+    labels:
+      car:
+        name: Name
+
+  helpers:
+    submit:
+      car:
+        create: Create car
+        update: Update car
