@@ -13,8 +13,8 @@
 
 ## Startup
 
-- redis-server
-- bin/dev
+1. redis-server
+2. bin/dev
 
 ## Test
 
