@@ -8,8 +8,8 @@
 
 ## Create and seed db:
 
-- bin/rails db:drop db:create db:migrate
-- bin/rails db:seed
+1. bin/rails db:drop db:create db:migrate
+2. bin/rails db:seed
 
 ## Startup
 
